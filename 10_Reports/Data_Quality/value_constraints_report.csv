@@ -1,0 +1,8 @@
+Rule Name,Table,Column,Total Rows,Violations Count,Violation %,SQL Constraint
+Review score between 1 and 5,order_reviews,review_score,99224,0,0.0,review_score < 1 OR review_score > 5
+Non-negative item price,order_items,price,112650,0,0.0,price < 0
+Non-negative freight value,order_items,freight_value,112650,0,0.0,freight_value < 0
+Non-negative payment value,order_payments,payment_value,103886,0,0.0,payment_value < 0
+Non-negative payment installments,order_payments,payment_installments,103886,0,0.0,payment_installments < 0
+Approval timestamp >= purchase timestamp,orders,order_approved_at,99441,0,0.0,order_approved_at < order_purchase_timestamp
+Delivery timestamp >= purchase timestamp,orders,order_delivered_customer_date,99441,0,0.0,order_delivered_customer_date < order_purchase_timestamp

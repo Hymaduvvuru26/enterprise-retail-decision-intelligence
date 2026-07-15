@@ -1,0 +1,10 @@
+Schema,Table,Unique Keys,Total Rows,Duplicate Rows,Duplicate %
+staging,customers,customer_id,99441,0,0.0
+staging,orders,order_id,99441,0,0.0
+staging,order_items,"order_id, order_item_id",112650,0,0.0
+staging,products,product_id,32951,0,0.0
+staging,sellers,seller_id,3095,0,0.0
+staging,order_reviews,review_id,99224,814,0.82
+staging,order_payments,"order_id, payment_sequential",103886,0,0.0
+staging,category_translation,product_category_name,71,0,0.0
+staging,geolocation,"geolocation_zip_code_prefix, geolocation_lat, geolocation_lng",1000163,280009,28.0
